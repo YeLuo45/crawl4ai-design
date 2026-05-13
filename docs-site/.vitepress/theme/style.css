@@ -1,0 +1,259 @@
+/* Crawl4AI Design - Cyan/Teal Dark Theme */
+
+:root {
+  --vp-c-bg: #0a1015;
+  --vp-c-bg-alt: #0d151a;
+  --vp-c-bg-elv: #111c24;
+  --vp-c-bg-soft: #1a2832;
+
+  --vp-c-text-1: #e8f0f4;
+  --vp-c-text-2: #a8bcc8;
+  --vp-c-text-3: #6b8292;
+
+  --vp-c-brand-1: #22d3ee;
+  --vp-c-brand-2: #06b6d4;
+  --vp-c-brand-3: #0891b2;
+
+  --vp-c-divider: #1a2832;
+  --vp-c-gutter: #0d151a;
+
+  --vp-nav-bg-color: rgba(10, 16, 21, 0.95);
+  --vp-sidebar-bg-color: #0d151a;
+
+  --vp-code-block-bg: #0d151a;
+  --vp-code-color: #22d3ee;
+
+  --vp-c-default-soft: #1a2832;
+  --vp-c-tip-soft: #1a2420;
+  --vp-c-warning-soft: #2a2418;
+  --vp-c-danger-soft: #241a1a;
+}
+
+/* Hero Section */
+.VPHero {
+  background: linear-gradient(135deg, #0a1015 0%, #111c24 50%, #0d151a 100%) !important;
+}
+
+/* Hero Title Gradient - Cyan */
+.VPHero .name {
+  font-size: 3.5rem;
+  font-weight: 800;
+  background: linear-gradient(120deg, #22d3ee 0%, #06b6d4 40%, #a78bfa 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+.VPHero .text {
+  font-size: 1.5rem;
+  color: #a8bcc8;
+}
+
+.VPHero .tagline {
+  color: #6b8292;
+  font-size: 1.1rem;
+}
+
+/* Feature Cards */
+.VPFeature {
+  background: rgba(26, 40, 50, 0.5) !important;
+  border: 1px solid rgba(34, 211, 238, 0.1) !important;
+  transition: all 0.3s ease !important;
+}
+
+.VPFeature:hover {
+  background: rgba(26, 40, 50, 0.8) !important;
+  border-color: rgba(34, 211, 238, 0.3) !important;
+  transform: translateY(-4px) !important;
+  box-shadow: 0 12px 40px rgba(34, 211, 238, 0.1) !important;
+}
+
+.VPFeature .title {
+  color: #e8f0f4 !important;
+}
+
+.VPFeature .details {
+  color: #a8bcc8 !important;
+}
+
+/* Navigation */
+.VPNav {
+  background: rgba(10, 16, 21, 0.95) !important;
+  backdrop-filter: blur(16px);
+  border-bottom: 1px solid rgba(26, 40, 50, 0.8);
+}
+
+.VPNavBarTitle .title {
+  color: #22d3ee !important;
+  font-weight: 700;
+}
+
+.VPNavBarMenuLink {
+  color: #a8bcc8 !important;
+}
+
+.VPNavBarMenuLink:hover,
+.VPNavBarMenuLink.active {
+  color: #22d3ee !important;
+}
+
+/* Sidebar */
+.VPSidebar {
+  background: #0d151a !important;
+  border-right: 1px solid #1a2832;
+}
+
+.VPSidebarItem .text {
+  color: #a8bcc8 !important;
+}
+
+.VPSidebarItem.is-active > .item .text {
+  color: #22d3ee !important;
+}
+
+/* Buttons */
+.VPButton {
+  border-radius: 6px;
+  font-weight: 600;
+}
+
+.VPButton.medium.brand {
+  background: linear-gradient(135deg, #06b6d4 0%, #22d3ee 100%);
+  border: none;
+  color: #0a1015 !important;
+}
+
+.VPButton.medium.brand:hover {
+  background: linear-gradient(135deg, #0cb8cc 0%, #2de0f5 100%);
+  transform: translateY(-2px);
+  box-shadow: 0 8px 24px rgba(34, 211, 238, 0.25);
+}
+
+/* Content */
+.VPDoc {
+  background: #0a1015;
+}
+
+.VPDoc h1 {
+  color: #e8f0f4;
+  font-size: 2rem;
+  font-weight: 700;
+  border-bottom: 1px solid #1a2832;
+  padding-bottom: 0.5rem;
+}
+
+.VPDoc h2 {
+  color: #e8f0f4;
+  font-size: 1.5rem;
+  margin-top: 2rem;
+}
+
+.VPDoc h3 {
+  color: #e8f0f4;
+  font-size: 1.25rem;
+}
+
+.VPDoc p {
+  color: #a8bcc8;
+  line-height: 1.8;
+}
+
+.VPDoc a {
+  color: #22d3ee;
+}
+
+.VPDoc a:hover {
+  color: #2de0f5;
+}
+
+/* Code Blocks */
+.vp-code-group .tabs {
+  background: #0d151a;
+  border-bottom: 1px solid #1a2832;
+}
+
+.vp-code-group .tabs button {
+  color: #6b8292;
+}
+
+.vp-code-group .tabs button.active {
+  color: #22d3ee;
+  border-bottom: 2px solid #22d3ee;
+}
+
+div[class*="language-"] {
+  background: #0d151a !important;
+  border: 1px solid #1a2832;
+  border-radius: 8px;
+}
+
+div[class*="language-"] code {
+  color: #e8f0f4;
+}
+
+/* Tables */
+.VPDoc table {
+  border-collapse: collapse;
+  width: 100%;
+}
+
+.VPDoc th {
+  background: #0d151a;
+  color: #e8f0f4;
+  font-weight: 600;
+  padding: 0.75rem 1rem;
+  border: 1px solid #1a2832;
+}
+
+.VPDoc td {
+  color: #a8bcc8;
+  padding: 0.75rem 1rem;
+  border: 1px solid #1a2832;
+}
+
+.VPDoc tr:hover {
+  background: rgba(26, 40, 50, 0.3);
+}
+
+/* Blockquotes */
+.VPDoc blockquote {
+  background: rgba(26, 40, 50, 0.5);
+  border-left: 4px solid #06b6d4;
+  padding: 1rem 1.5rem;
+  margin: 1.5rem 0;
+}
+
+.VPDoc blockquote p {
+  color: #a8bcc8;
+  margin: 0;
+}
+
+/* Footer */
+.VPFooter {
+  background: #0d151a !important;
+  border-top: 1px solid #1a2832;
+}
+
+.VPFooter .message,
+.VPFooter .copyright {
+  color: #6b8292;
+}
+
+/* Scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: #0d151a;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #1a2832;
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #2a3842;
+}
